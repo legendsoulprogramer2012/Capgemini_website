@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Your Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('NEW SRG.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #333;
+            color: #fff;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            background: #2196f3;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #0b8dd7;
+        }
+
+        .login-container a {
+            display: block;
+            margin-top: 10px;
+            color: #2196f3;
+            text-decoration: none;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to Your Account</h2>
+        <form onsubmit="return validateLogin(event)">
+            <input type="text" id="username" placeholder="Email or Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <a href="#">Forgot Password?</a>
+        </form>
+    </div>
+
+    <script>
+        function botVoice(message) {
+            const speech = new SpeechSynthesisUtterance();
+            speech.text = "Sorry, I did not understand that.";
+            if (message.includes('Who Is The CEO Of CapGemini')) {
+                speech.text = "Aiman Ezzat";
+            }
+            window.speechSynthesis.speak(speech);
+        }
+
+        function validateLogin(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            if (username === "Rishit Dodia" && password === "My Capgemini_ AWS") {
+                window.location.href = "file:///F:/SRG/MY_PROJECT/COMPUTER_SCIENCE/A%20BIG%20PROJECT/A%20BIG%20PROJECT%202/scroll%20.html";
+            } else {
+                botVoice("Sorry, I did not understand that.");
+                alert("Incorrect username or password. Try again.");
+            }
+        }
+    </script>
+</body>
+</html>

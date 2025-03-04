@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorative Profile Card</title>
+    <style>
+   
+
+        
+            
+
+
+
+
+
+     /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('NEW SRG.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Flip Card Container */
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 350px;
+            perspective: 1000px;
+        }
+
+        /* Inner Card */
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        /* Flip Effect */
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* Card Front & Back */
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Front Side */
+        .flip-card-front {
+            background: #bbb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+        }
+
+        .flip-card-front img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        /* Back Side */
+        .flip-card-back {
+            background: linear-gradient(135deg, #1a252f, #0b8dd7);
+            color: white;
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .flip-card-back h2 {
+            margin-bottom: 10px;
+        }
+
+        .flip-card-back p {
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Profile Flip Card -->
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <!-- Front Side -->
+            <div class="flip-card-front">
+                <img src="Aiman-Ezzat.jpg" alt="Aiman Ezzat">
+            </div>
+            <!-- Back Side -->
+            <div class="flip-card-back">
+                <h2>Aiman Ezzat</h2>
+                <p>Capgemini CEO</p>
+                <p>Capgemini was founded in 1967 as an enterprise management and data processing company. Aiman Ezzat leads the company to innovation and digital transformation.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

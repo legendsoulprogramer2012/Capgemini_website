@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll Menu</title>
+    <style>
+      
+
+
+
+
+
+  body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: black;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        #Profile Card{ background: #111; color: white; }
+        #section2 { background: #222; color: white; }
+        #section3 { background: #333; color: white; }
+        #section4 { background: #444; color: white; }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#section1">Introduction Card</a>
+        <a href="#section2">Our Introduction Video</a>
+        <a href="#section3">Login To Our Account</a>
+        <a href="#section4">Profile Card</a>
+        <a href="#section5">Activate Voice</a>
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow-x: hidden;
+            transition: width 0.5s ease;
+        }
+
+        .menu-wrapper a {
+            padding: 15px 32px;
+            text-decoration: none;
+            font-size: 22px;
+            color: #fff;
+            display: block;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-wrapper a:hover {
+            background-color: #575757;
+        }
+
+        .menu-btn {
+            font-size: 20px;
+            color: white;
+            background: linear-gradient(135deg, #2c3e50, #1a252f);
+            border: none;
+            padding: 15px 40px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            border-radius: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .menu-btn:hover {
+            background: linear-gradient(135deg, #34495e, #1f2c38);
+            transform: scale(1.05);
+        }
+
+        .menu-btn:focus {
+            outline: none;
+        }
+
+        .menu-btn.active + .menu-wrapper {
+            width: 250px;
+        }
+    </style>
+    <title>Stylish Click Menu</title>
+</head>
+<body>
+
+    <!-- Menu Button -->
+    <button class="menu-btn" onclick="toggleMenu()">=Menu</button>
+
+    <!-- Menu -->
+    <div class="menu-wrapper" id="menu">
+        <a href="mm"></a>
+      <a href="mm"></a>
+<a href="file:///F:/SRG/MY_PROJECT/COMPUTER_SCIENCE/A%20BIG%20PROJECT/A%20BIG%20PROJECT%202/1%20Capgemini%20About%20Us%20.html">
+Capgemini About Us        
+
+<a href="file:///F:/SRG/MY_PROJECT/COMPUTER_SCIENCE/A%20BIG%20PROJECT/A%20BIG%20PROJECT%202/1%20Capgemini%20Carriours%20%20.html">Capgemini Carriours  </a>
+        <a href="file:///F:/SRG/MY_PROJECT/COMPUTER_SCIENCE/A%20BIG%20PROJECT/A%20BIG%20PROJECT%202/1%20Capgemini%20Service.html">Capgemini Services</a>
+        <a href="file:///F:/SRG/MY_PROJECT/COMPUTER_SCIENCE/A%20BIG%20PROJECT/A%20BIG%20PROJECT%202/1%20Capgemini%20Relationship.HTML">Capgemini Relationship</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            const btn = document.querySelector('.menu-btn');
+            menu.style.width = menu.style.width === '250px' ? '0' : '250px';
+            btn.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
+    <div id="section1" class="section"><iframe src="file:///F:/SRG/MY_PROJECT/COMPUTER_SCIENCE/A%20BIG%20PROJECT%202/1%20my%20apgemini.html" width="100%" height="100%"></iframe></div>
+    <div id="section2" class="section"><iframe src="file:///F:/SRG/MY_PROJECT/COMPUTER_SCIENCE/A%20BIG%20PROJECT%202/1%20video.html" width="100%" height="100%"></iframe></div>
+    <div id="section3" class="section"><iframe src="file:///F:/SRG/MY_PROJECT/COMPUTER_SCIENCE/A%20BIG%20PROJECT%202/1%20login%20to%20your%20accound%20%20.html" width="100%" height="100%"></iframe></div>
+    <div id="section4" class="section"><iframe src="file:///F:/SRG/MY_PROJECT/COMPUTER_SCIENCE/A%20BIG%20PROJECT%202/1%20capgemini%20profile%20card%20.html" width="100%" height="100%"></iframe></div>
+<div id="section5" class="section"><iframe src="file:///F:/SRG/MY_PROJECT/COMPUTER_SCIENCE/A%20BIG%20PROJECT%202/A1%20chabox.html" width="100%" height="100%"></iframe></div>    
+
+
+<script>
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
